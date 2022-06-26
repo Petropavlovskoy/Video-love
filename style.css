@@ -47,13 +47,13 @@ html, body {
 
 .container .header-main {
    font-family: 'Rajdhani', sans-serif;
-   font-size: 5rem;
+   font-size: 4rem;
    text-transform: uppercase;
 }
 
 .container .header-second {
    font-family: 'Secular One', sans-serif;
-   font-size: 3rem;
+   font-size: 2rem;
    font-weight: 500;
    margin-bottom: 30px;
 }
