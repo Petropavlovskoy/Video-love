@@ -67,6 +67,12 @@ height: 64px;
    fill: #000;
    transition: all ease 1.5s;
 }
-/* .container svg:hover {
-   fill: #fff;
-} */
+.container svg:hover {
+   /* fill: #fff; */
+   color: rgb(255, 255, 255);
+
+}
+
+/* .icon:hover {
+   color: rgb(255, 255, 255);
+ } */
