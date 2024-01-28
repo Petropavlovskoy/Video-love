@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Sergei Liashenko</title>
+   <title>Serhii Liashenko</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css?family=Rajdhani:wght@500&family+Secular+One&display=swap"
@@ -19,9 +19,12 @@
       <source src="./images/pexels-nothing-ahead-10505868.webm" type="video/webm">
       <source src="./images/pexels-nothing-ahead-10505868.ogv" type="video/ogg">
    </video>
+
+
+
    <div class="container">
       <h1 class="header-main">
-         <a href="#"> Sergey Liashenko</a>
+         <a href="#"> Serhii Liashenko</a>
       </h1>
 
       <h2 class="header-second">Front-end developer
@@ -183,6 +186,39 @@
          </a>
       </div>
    </div>
+
+   <img class="soundbutton paused" src="images/sound.gif" alt="Alt">
+   <audio class="audio" src="./images/top.mp3" loop></audio>
+
+   <!-- <audio id="background-music" autoplay loop>
+      <source src="./images/top.mp3" type="audio/mp3">
+    </audio> -->
+
+   <!-- <div class="music-toggle">
+      <button id="music-toggle-btn" onclick="toggleMusic()">🔊 Вкл./Выкл. музыку</button>
+   </div> -->
+   
+   <script>
+      // Audio
+
+      let soundButton = document.querySelector('.soundbutton'),
+         audio = document.querySelector('.audio')
+
+      soundButton.addEventListener('click', e => {
+         soundButton.classList.toggle('paused')
+         audio.paused ? audio.play() : audio.pause()
+      })
+
+      window.onfocus = function () {
+         soundButton.classList.contains('paused') ? audio.pause() : audio.play()
+      }
+
+      window.onblur = function () {
+         audio.pause()
+      }
+   </script>
+
+
 </body>
 
 </html>

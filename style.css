@@ -27,11 +27,12 @@ html, body {
    animation-fill-mode: forwards;
 }
 
-@keyframes show{
-   0%{
+@keyframes show {
+   0% {
       opacity: 0;
    }
-   100%{
+
+   100% {
       opacity: 100;
    }
 }
@@ -59,14 +60,15 @@ html, body {
 }
 
 .container svg {
-width: 64px;
-height: 64px;
+   width: 64px;
+   height: 64px;
 }
 
 .container svg g {
    fill: #000;
    transition: all ease 1.5s;
 }
+
 .container svg:hover {
    /* fill: #fff; */
    color: rgb(255, 255, 255);
@@ -76,3 +78,28 @@ height: 64px;
 /* .icon:hover {
    color: rgb(255, 255, 255);
  } */
+
+body {
+   position: relative;
+   margin-bottom: 40px;
+   /* Отрегулируйте отступ, чтобы освободить место для кнопки */
+}
+
+/* .music-toggle {
+   position: fixed;
+   bottom: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+} */
+
+.soundbutton {
+	position: fixed;
+	bottom: 5vh;
+	right: 5vw;
+	cursor: pointer;
+	width: 24px;
+	transition: .25s ease;
+}
+.soundbutton.paused {
+	opacity: .25;
+}
